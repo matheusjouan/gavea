@@ -16,6 +16,7 @@ Link Deploy: https://challenge-gavea-authentication.netlify.app/
   - ReactJS
   - TypeScript
   - Firebase
+  - Context API
   - Styled Components
   - React Router DOM
   - React Hooks Form
