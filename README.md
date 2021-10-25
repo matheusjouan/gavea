@@ -25,7 +25,7 @@ Link Deploy: https://challenge-gavea-authentication.netlify.app/
 ## Clonando e Instalando depedências do Projeto
 ```shell
 $ git clone https://github.com/matheusjouan/gavea.git
-$ cd gavear
+$ cd gavea
 $ yarn install
 $ yarn start
 ```
