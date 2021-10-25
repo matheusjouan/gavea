@@ -5,6 +5,8 @@ Criar uma aplicação mobile utilizando React/Typescript a partir do figma forne
 Conteplará a funcionalidade de cadastrar e logar a partir dos serviços do Firebase.
 Igualmente a aplicação possui um rotá privada ('/dashboard') que só permitirá acessar se o usuário estiver autenticado.
 
+Link Deploy: https://challenge-gavea-authentication.netlify.app/
+
 ## Padronização de Código
   - ESLint
   - Prettier
