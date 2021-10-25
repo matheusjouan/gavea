@@ -47,7 +47,7 @@ export const AuthContextProvider = ({ children }: AuthProviderProps) => {
           setUser(userCurrent.displayName.split(' ')[0]);
           localStorage.setItem(
             '@Gavea:userName',
-            JSON.stringify(userCurrent.displayName),
+            JSON.stringify(userCurrent.displayName.split(' ')[0]),
           );
         }
       }
