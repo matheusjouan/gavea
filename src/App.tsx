@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import Routes from './routes';
+
+import theme from './styles/themes/theme';
+import GlobalStyles from './styles/global';
+import { AuthContextProvider } from './context/AuthContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <AuthContextProvider>
+        <ThemeProvider theme={theme}>
+          <GlobalStyles />
+          <Routes />
+        </ThemeProvider>
+      </AuthContextProvider>
+    </BrowserRouter>
   );
 }
 
