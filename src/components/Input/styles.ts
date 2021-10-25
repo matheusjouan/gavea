@@ -8,18 +8,18 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   position: relative;
 
+  &:hover, &:active {
+    .iconLeft {
+      color: ${props => props.theme.colors.orange};
+    }
+  }
+
   .iconLeft {
     position: absolute;
     left: 20px;
     top: 18px;
-    color: #748c94;
+    color: ${props => props.theme.colors.grey};
     transition: color 0.3s;
-
-    ${props =>
-    props.isFocused &&
-    css`
-        color: ${props => props.theme.colors.orange};
-      `}
   }
 
   .iconRight {
